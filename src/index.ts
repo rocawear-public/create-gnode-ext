@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import inquirer from "inquirer";
 import path from "path";
 import fs from "fs-extra";
@@ -15,8 +17,7 @@ export async function init() {
   const exist = await fs.exists(dir);
 
   if (exist) {
-    console.log("Folder already exists, aborting...");
-    process.exit(1);
+    throw new Error("Folder already exists, aborting...");
   }
 
   const { store } = await inquirer.prompt<{ store: string }>({
@@ -88,4 +89,4 @@ async function main() {
   console.log(`npm run dev`);
 }
 
-main().catch((err) => console.log(err));
+main().catch((err: Error) => console.log(err.message));
