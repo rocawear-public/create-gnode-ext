@@ -1,0 +1,27 @@
+{
+  "name": "create-gnode-ext",
+  "version": "1.0.0",
+  "description": "create-gnode-ext",
+  "main": "./dist/src/index.js",
+  "scripts": {
+    "dev": "tsx ./src/index",
+    "build": "tsc",
+    "start": "node ./dist/src/index.js"
+  },
+  "source": "",
+  "readme": "",
+  "releases": "",
+  "keywords": [],
+  "author": "rocawear",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.0",
+    "@types/node": "^18.11.18",
+    "fs-extra": "^11.1.0",
+    "tsx": "^3.12.2"
+  },
+  "dependencies": {
+    "@types/inquirer": "^9.0.3",
+    "inquirer": "^9.1.4"
+  }
+}

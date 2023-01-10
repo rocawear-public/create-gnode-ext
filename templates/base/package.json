@@ -1,0 +1,26 @@
+{
+  "name": "gnode-starter",
+  "version": "1.0.0",
+  "description": "G-Node Starter",
+  "type": "module",
+  "main": "./src/index.js",
+  "scripts": {
+    "dev": "tsx ./src/index -p 9092",
+    "build": "tsc",
+    "start": "node ./src/index.js",
+    "start:test": "node ./dist/src/index.js -p 9092"
+  },
+  "source": "",
+  "readme": "",
+  "releases": "",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "tsx": "^3.12.2"
+  },
+  "dependencies": {
+    "gnode-api": "^0.2.12"
+  }
+}
