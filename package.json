@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "create-gnode-ext",
   "main": "dist/index.js",
+  "type": "module",
   "scripts": {
     "dev": "tsx src/index",
     "build": "tsc",
@@ -23,12 +24,12 @@
   },
   "devDependencies": {
     "@types/fs-extra": "^11.0.0",
+    "@types/inquirer": "^9.0.3",
     "@types/node": "^18.11.18",
-    "@types/inquirer": "^8.2.4",
     "tsx": "^3.12.2"
   },
   "dependencies": {
-    "inquirer": "^8.2.4",
-    "fs-extra": "^11.1.0"
+    "fs-extra": "^11.1.0",
+    "inquirer": "^9.1.4"
   }
 }

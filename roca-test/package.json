@@ -1,0 +1,30 @@
+{
+  "name": "gnode-extension",
+  "version": "1.0.0",
+  "description": "example extension",
+  "type": "module",
+  "main": "./src/index.js",
+  "scripts": {
+    "dev": "tsx ./src/index -p 9092",
+    "build": "tsc",
+    "start": "node ./src/index.js",
+    "start:test": "node ./dist/src/index.js -p 9092",
+    "store": "npm run build && tsx ./util/store"
+  },
+  "source": "",
+  "readme": "",
+  "releases": "",
+  "keywords": [],
+  "author": "rocawear",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.0",
+    "@types/node": "^18.11.18",
+    "fs-extra": "^11.1.0",
+    "tsx": "^3.12.2",
+    "zip-a-folder": "^1.1.5"
+  },
+  "dependencies": {
+    "gnode-api": "^0.2.12"
+  }
+}
