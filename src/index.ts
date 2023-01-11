@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { init, copyBaseTemplate, copyStoreTemplate } from "./utils/project.js";
+import { init, copyBaseTemplate, copyStoreTemplate } from "./utils/project";
 
 async function main() {
   const { name, dir, store } = await init();

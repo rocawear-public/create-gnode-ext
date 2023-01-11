@@ -2,15 +2,14 @@
   "name": "create-gnode-ext",
   "version": "1.0.0",
   "description": "create-gnode-ext",
-  "type": "module",
-  "main": "./dist/index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "dev": "tsx ./src/index",
+    "dev": "tsx src/index",
     "build": "tsc",
     "start": "node dist/index.js"
   },
   "bin": {
-    "create-gnode-ext": "./dist/index.js"
+    "create-gnode-ext": "dist/index.js"
   },
   "source": "",
   "readme": "",
@@ -25,11 +24,11 @@
   "devDependencies": {
     "@types/fs-extra": "^11.0.0",
     "@types/node": "^18.11.18",
-    "@types/inquirer": "^9.0.3",
+    "@types/inquirer": "^8.2.4",
     "tsx": "^3.12.2"
   },
   "dependencies": {
-    "inquirer": "^9.1.4",
+    "inquirer": "^8.2.4",
     "fs-extra": "^11.1.0"
   }
 }
